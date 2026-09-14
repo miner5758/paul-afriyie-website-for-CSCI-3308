@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <title>Resume | Paul Osei Afriyie</title>
+  </head>
+
+  <body class="resume">
+    <header>
+      <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+        <div class="container">
+          <span class="navbar-brand">Paul Osei Afriyie</span>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="site-nav">
+            <ul class="navbar-nav gap-2">
+              <li class="nav-item"><a class="nav-link border px-3" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link border px-3" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link border px-3" href="hobbies.html">Hobbies</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Resume</h1>
+
+      <!-- contact links -->
+      <section>
+        <ul class="list-unstyled d-flex flex-wrap gap-4">
+          <li><a href="mailto:paul.afriyie19@gmail.com">paul.afriyie19@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/paul-afriyie/">linkedin.com/in/paul-afriyie</a></li>
+          <li><a href="https://github.com/miner5758">github.com/miner5758</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <!-- row/col puts the place on the left and the date on the right -->
+        <div class="row">
+          <h3 class="col-sm-8">University of Colorado Boulder</h3>
+          <p class="col-sm-4 text-sm-end">Expected May 2029</p>
+        </div>
+        <p>Bachelor of Science in Computer Science, Minor in Data Science.</p>
+        <ul>
+          <li>GPA 3.51</li>
+          <li>Dean&rsquo;s List, Fall 2025</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <dl>
+          <dt>Languages</dt>
+          <dd>Python, C/C++, Java, JavaScript, HTML/CSS</dd>
+
+          <dt>Frameworks and Tools</dt>
+          <dd>
+            Flutter, Git, Firebase, VS Code, Android Studio, Pandas, Matplotlib,
+            PyTorch, Conda, Model Context Protocol
+          </dd>
+
+          <dt>Data and Systems</dt>
+          <dd>
+            SQL, Excel, Tableau, Linux, GitHub, Amazon Redshift, Amazon Web
+            Services, Distributed Systems, Infrastructure as Code, Technical
+            Writing
+          </dd>
+
+          <dt>Organizations</dt>
+          <dd>ColorStack, National Society of Black Engineers</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="row">
+          <h3 class="col-sm-8">Undergraduate Research Assistant</h3>
+          <p class="col-sm-4 text-sm-end">January 2026 - Present</p>
+        </div>
+        <p>Correll Lab, CU Boulder</p>
+        <ul>
+          <li>
+            Processed 130 robotic manipulation demonstrations across 30 task and
+            object combinations into RLDS and LeRobot formats to support
+            Vision-Language-Action model training.
+          </li>
+          <li>
+            Visualized UR5 robot datasets using Rerun to validate quality and debug
+            formatting issues prior to training.
+          </li>
+          <li>
+            Fine-tuned SmolVLA over 15,000 training steps using bfloat16 mixed
+            precision, reducing training loss from 0.43 to 0.02 and converging by
+            step 10,000.
+          </li>
+        </ul>
+
+        <div class="row">
+          <h3 class="col-sm-8">Software Development Engineer Intern</h3>
+          <p class="col-sm-4 text-sm-end">May 2026 - August 2026</p>
+        </div>
+        <p>Amazon Web Services</p>
+        <ul>
+          <li>
+            Architected a multi-region, serverless asynchronous query API using API
+            Gateway, Lambda, DynamoDB, and S3, empowering 4+ internal teams to query
+            Amazon Redshift metadata securely, and engineered a custom throttling
+            system using atomic transactions to protect production workloads.
+          </li>
+          <li>
+            Built a TypeScript MCP server on top of the query API, enabling AI agents
+            to fetch Amazon Redshift metadata via natural language while handling
+            SigV4 authentication, async polling, and error propagation.
+          </li>
+          <li>
+            Reduced Lambda cold-start initialization from about 90 seconds to about
+            10 seconds by optimizing discovery queries and externalizing the schema
+            cache to DynamoDB.
+          </li>
+          <li>
+            Authored 3 technical design documents covering API architecture,
+            throttling, and AI agent integration.
+          </li>
+        </ul>
+
+        <div class="row">
+          <h3 class="col-sm-8">Data Analyst Intern</h3>
+          <p class="col-sm-4 text-sm-end">August 2024 - December 2024</p>
+        </div>
+        <p>Aurora Public Schools Accountability and Research</p>
+        <ul>
+          <li>
+            Manipulated, cleaned, and visualized various datasets using Python, SQL,
+            Excel, and Tableau, sourced from platforms such as the Colorado
+            Department of Education and Infinite Campus.
+          </li>
+          <li>
+            Built a Tableau dashboard analyzing an APS student dataset spanning
+            around 59 schools, containing information such as SAT scores and
+            attendance rates.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <div class="row">
+          <p class="col-sm-8">Google IT Automation with Python Specialization, Coursera</p>
+          <p class="col-sm-4 text-sm-end">December 2022</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Honors and Awards</h2>
+        <div class="row">
+          <p class="col-sm-8">
+            Amazon Future Engineer, LinkedIn Possibilities in Tech, and BOLD Center
+            scholarships
+          </p>
+          <p class="col-sm-4 text-sm-end">April 2025</p>
+        </div>
+        <div class="row">
+          <p class="col-sm-8">
+            President&rsquo;s Volunteer Service Award, Bronze, issued by the President
+            of the United States
+          </p>
+          <p class="col-sm-4 text-sm-end">December 2024</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="container d-flex justify-content-between">
+        <li><a href="https://github.com/miner5758">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/paul-afriyie/">LinkedIn</a></li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

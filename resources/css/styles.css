@@ -1,0 +1,184 @@
+/* Personal site styles. Black, white and red, all matte.
+   Loads after Bootstrap, so anything here wins over Bootstrap's defaults. */
+
+/* my colors, so I only change them in one spot */
+:root {
+  --ink: #1c1b1a;
+  --paper: #f7f6f4;
+  --card: #ffffff;
+  --red: #9b2c2c;
+  --muted: #5f5c58;
+  --line: #d9d5cf;
+}
+
+/* element selector. custom colors and typography for the whole site */
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.25;
+}
+
+/* margin and padding, plus the red line under every page title */
+h1 {
+  font-size: 2.1rem;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--red);
+}
+
+a {
+  color: var(--red);
+}
+
+nav ul,
+footer ul {
+  list-style: none;
+  margin: 0;
+}
+
+main {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+/* navbar on the inner pages */
+header {
+  background-color: var(--ink);
+}
+
+header .navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+}
+
+/* bootstrap override. nav links go red on hover instead of just fading */
+header .nav-link:hover,
+header .nav-link:focus {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+/* home page */
+body.home header {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--paper);
+}
+
+body.home header h1 {
+  border-bottom: none;
+  margin-bottom: 1.5rem;
+  font-size: 2.6rem;
+}
+
+/* border makes the red ring around the portrait */
+body.home header img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 4px solid var(--red);
+}
+
+body.home header p {
+  margin-top: 1.5rem;
+  color: var(--line);
+}
+
+body.home main section {
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+
+/* hobby and project cards */
+/* class selector. border, border radius and shadow on each card */
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  color: var(--red);
+}
+
+/* every card image gets the same height so the cards line up */
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* resume */
+body.resume h2 {
+  margin-top: 2.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.4rem;
+}
+
+body.resume h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+
+/* the date next to each job title, quieter than the title itself */
+body.resume .row p {
+  margin-bottom: 0.2rem;
+  color: var(--muted);
+}
+
+dt {
+  color: var(--red);
+}
+
+dd {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+/* footer */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0;
+}
+
+footer a {
+  color: var(--ink);
+}
+
+/* bootstrap override. its .btn is blue by default, this makes it match my site */
+.btn {
+  background-color: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: var(--paper);
+}
+
+/* same idea for the badge, red instead of bootstrap's default */
+.badge {
+  background-color: var(--red);
+}

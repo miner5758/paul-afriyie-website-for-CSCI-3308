@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <title>Hobbies | Paul Osei Afriyie</title>
+  </head>
+
+  <!-- bootstrap annotations
+       container (main): centers the page content and adds side padding
+       col-md-4 (each hobby): three columns on bigger screens, stacked on phones
+       navbar-expand-md (nav): links in a row on bigger screens, hamburger menu on phones -->
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+        <div class="container">
+          <span class="navbar-brand">Paul Osei Afriyie</span>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="site-nav">
+            <ul class="navbar-nav gap-2">
+              <li class="nav-item"><a class="nav-link border px-3" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link border px-3" href="resume.html">Resume</a></li>
+              <li class="nav-item"><a class="nav-link border px-3" href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Hobbies</h1>
+
+      <!-- three cards, one per column -->
+      <div class="row g-4">
+        <section class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Playing Video Games</h2>
+              <img class="rounded mb-3" src="resources/img/hobby-video-games.jpg" alt="Screenshot from one of my favorite video games" />
+              <p class="card-text">
+                Ever since I started using my older brother&rsquo;s PS4 back in 2015, I
+                have had a huge love for video games, especially single-player, story
+                driven experiences. My favorite game of all time is Elden Ring, with Red
+                Dead Redemption and Ghost of Tsushima coming in a close second.
+                Currently, I am awaiting GTA 6.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Learning How to Cook</h2>
+              <img class="rounded mb-3" src="resources/img/hobby-cooking.jpg" alt="A meal I cooked at home" />
+              <p class="card-text">
+                This is a developing interest of mine, and I only started cooking over
+                the course of this summer. Since then I have been slowly learning new
+                recipes and improving. Both my mom and my sister are avid cooks, so the
+                appeal has always been there. So far I have made chicken bacon ranch
+                pasta, as well as homemade BBQ chicken pizza (from the dough and
+                everything!).
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Trying New Foods</h2>
+              <img class="rounded mb-3" src="resources/img/hobby-new-foods.jpg" alt="Fried chicken from Howlin' Ray's Hot Chicken in Los Angeles" />
+              <p class="card-text">
+                I have always loved going out to try brand new foods, and when I am
+                somewhere different it is one of the first things I want to do. I can
+                admit I have basic taste though, since my favorite food is fried
+                chicken, and the best chicken I have ever had was from Howlin&rsquo; Ray&rsquo;s
+                Hot Chicken in Los Angeles.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <ul class="container d-flex justify-content-between">
+        <li><a href="https://github.com/miner5758">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/paul-afriyie/">LinkedIn</a></li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
