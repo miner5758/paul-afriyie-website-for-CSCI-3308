@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    padding-top: 2%;
+}
+body {
+    height: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  .event:hover {
+    cursor: pointer;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    height: 0;
+  }
+  
+  #calendar {
+    height: 100vh !important;
+  }
+
+.custom-container {
+    width: 100%;
+    padding: 20%;
+}
+
+.category-academic {
+    background-color: #cfe2ff;   /* light blue */
+    border-color: #0d6efd !important;
+    color: #052c65;
+}
+
+.category-work {
+    background-color: #fff3cd;   /* light yellow */
+    border-color: #ffc107 !important;
+    color: #664d03;
+}
+
+.category-personal {
+    background-color: #d1e7dd;   /* light green */
+    border-color: #198754 !important;
+    color: #0a3622;
+}
+
+.category-social {
+    background-color: #f8d7da;   /* light red */
+    border-color: #dc3545 !important;
+    color: #58151c;
+}
